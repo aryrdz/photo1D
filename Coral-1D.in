@@ -1,0 +1,30 @@
+M1.86_Z.02_l.txt
+! star models
+! M: Miller Bertolami 16,  S: Schonberner, P:Photoion
+M
+!Courant number(Co, 0-1)
+  0.35
+!Solver (0= 2o order Gudonov, 1=1er order Gudonov, 2=Predictor-Corrector, 3=Fred-lax)
+  0	
+!ichem: HD+PHOTO (0=HD+PHOTO, 1:ONLY PHOTO)
+  0
+!If Solver is > 1, artificial viscosity eta must be defined (0-0.25)
+  0.1
+!perc_fot acceptable percentage in qh variation before calling GenPhot
+ 5.,  
+!perc_temp acceptable percentage in temp variation before calling Atomic
+  4.
+! Maximum number of steps between two calls of GenPhot
+  20
+! Rmax [cm], timemax (yr),  dtprint (yr)
+   1.e18,         3001.,      50.
+!AGB wind parameters  mass loss in Msun/yr tagb in yr  used in initflow
+!amagb1  , amagb2,  amagb3
+ 1.e-4 ,           1.e-4,    1.e-4
+!tagb1  ,        tqgb2,        tagb3
+  0.,             5.e5,        6.e5  
+! Vwindagb [km/s], Twindagb [K]
+   15.,          200.
+! Numeric element abundances with respect to hydrogen
+! AbH_H,AbHE_H,AbC_H, AbN_H, AbO_H, AbS_H, AbAr_H. AbNe_H
+   1., 0.085, 0.000269, 0.0000676, 0.0004897, 0.0000131,0.000085, 0.0000025
